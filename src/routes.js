@@ -31,6 +31,7 @@ const PrivateRoute = (props)=>{
 }
 
 const Logout = (props)=>{
+     // localStorage.clear();
     const deletToken = localStorage.removeItem('token')
     if(deletToken)
     return <Navigate to='/login'/>
